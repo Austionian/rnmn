@@ -13,6 +13,8 @@ fn main() -> io::Result<()> {
 
     let _ = visit_dirs(entry, &delete_module);
 
+    let _ = fs::remove_dir(entry);
+
     Ok(())
 }
 
